@@ -1,5 +1,8 @@
 const express = require("express");
 const app = express();
+const path = require("path");
+
+app.set("view engine", "ejs");
 
 const pokedex = [
     {
@@ -26,14 +29,9 @@ const pokedex = [
 ]
 
 
-app.set("view engine", "ejs");
-
+//Rotas
 app.get("/", (req, res) => {
-  res.render("index", pokedex);
-});
-
-app.get("/home", (req, res) => {
-  res.send("Ola mundo do express");
+  res.render("index", {pokedex});
 });
 
 app.listen(3000, () =>
