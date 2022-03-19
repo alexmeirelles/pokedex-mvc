@@ -25,6 +25,7 @@ main {
     display: flex;
     justify-content: space-around;
     margin-top: 5rem;
+    flex-wrap: wrap;
 }
 
 section#cards div.card{
@@ -61,6 +62,10 @@ section#cadastro h2 {
     padding-bottom: 2rem;
 }
 
+section#cadastro form{
+    width: 70%;
+}
+
 section#cadastro form input{
     width: 100%;
     padding: .7rem;
@@ -75,6 +80,7 @@ section#cadastro form label{
 }
 
 section#cadastro form button{
+    margin-top: 1rem;
     margin-bottom: 1rem;
     
 
@@ -83,15 +89,15 @@ section#cadastro form button{
 
 
 button, button::after {
-    width: 380px;
-    height: 86px;
+    width: 300px;
+    height: 66px;
     font-size: 36px;
     font-family: 'Bebas Neue', cursive;
     background: linear-gradient(45deg, transparent 5%, #2d1a94 5%);
     border: 0;
     color: #fff;
     letter-spacing: 3px;
-    line-height: 88px;
+    line-height: 68px;
     box-shadow: 6px 0px 0px #00E6F6;
     outline: transparent;
     position: relative;
