@@ -35,12 +35,10 @@ const pokedex = [
 
 //Rotas
 app.get("/", (req, res) => {
-   
+   res.render("index", {pokedex, message});
     setTimeout(() => {
         message = "";
       }, 1000);
-   
-    res.render("index", {pokedex, message});
 });
 
 app.post("/add",(req, res) => {
