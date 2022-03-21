@@ -7,6 +7,10 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded());
 
+let message = "";
+
+
+
 const pokedex = [
     {
         id: 1,
@@ -34,19 +38,30 @@ const pokedex = [
 
 //Rotas
 app.get("/", (req, res) => {
-  res.render("index", {pokedex});
+    
+    setTimeout(() => {
+        message = "";
+      }, 5000);
+  
+    res.render("index", {pokedex, message});
+
+  
+
 });
+
 
 app.post("/add",(req, res) => {
     const pokemon = req.body;
     pokemon.id=pokedex.length + 1;
     pokedex.push(pokemon);
+    message = `Parabéns! Pokemon cadastrado com sucesso!`;
     res.redirect("/");
 })
 
 app.get("/update/:id", (req, res) => {
     const id = +req.params.id;
     const pokemon = pokedex.find(pokemon => pokemon.id === id);
+    res.render("index", {pokemon, pokedex});
   });
 
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));

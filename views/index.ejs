@@ -11,11 +11,17 @@
     <title>Blue Pokedex 3.0</title>
 </head>
 <body>
-
+    
     <header>
         <h1>Blue Pokedex 3.0</h1>
     </header>
     
+    <% if(message != "") {  %>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
+    <% }  %>
+
     <main>
         <section id="cards">
 
@@ -59,6 +65,7 @@
 
     </footer>
 
+    <script src="/js/script.js"></script>
 
 </body>
 </html>
