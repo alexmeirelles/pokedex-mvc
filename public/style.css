@@ -29,9 +29,10 @@ main {
 }
 
 section#cards div.card{
-    width: 20rem;   
+    width: 15rem;   
     box-shadow: 10px 5px 5px -6px #777;
     padding: 1rem;
+    margin-top: 2rem;
     
 }
 
@@ -41,6 +42,7 @@ section#cards div.card img{
 
 section#cards div.card h2{
     margin-bottom: 1rem;
+    color: midnightblue;
 }
 
 section#cards div.card p.descricao{
@@ -101,6 +103,7 @@ button, button::after {
     box-shadow: 6px 0px 0px #00E6F6;
     outline: transparent;
     position: relative;
+    cursor: pointer;
   }
   
   button::after {

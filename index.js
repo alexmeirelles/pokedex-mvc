@@ -4,7 +4,8 @@ const path = require("path");
 const port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
-app.use(express.static(path.join(__dirname, "public")))
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.urlencoded());
 
 const pokedex = [
     {
@@ -37,8 +38,15 @@ app.get("/", (req, res) => {
 });
 
 app.post("/add",(req, res) => {
-    
+    const pokemon = req.body;
+    pokemon.id=pokedex.length + 1;
+    pokedex.push(pokemon);
+    res.redirect("/");
 })
 
+app.get("/update/:id", (req, res) => {
+    const id = +req.params.id;
+    const pokemon = pokedex.find(pokemon => pokemon.id === id);
+  });
 
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
