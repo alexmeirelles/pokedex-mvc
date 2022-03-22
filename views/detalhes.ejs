@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Detalhes</title>
+  </head>
+  <body>
+    <header id="icon">
+      
+    </header>
+      <section>
+        <h1 id="detalhes2">DETALHES DO POKEMON</h1>
+      </section> 
+      <h1 id="detalhes3"><strong></strong> <%= pokemon.nome %> Nº <%= pokemon.id %>  </h1>
+      
+      <section id="detalhes1">
+        <ul>
+          <div>
+            <img src="<%= pokemon.imagem %>" alt="<%= pokemon.nome %>" width="200"/>
+          </div id="detalhesPokemon">
+          <div><strong>Descrição:</strong> <%= pokemon.descricao %></div>
+          <div><strong>Altura:</strong> <%= pokemon.altura %> M</div>
+          <div><strong>Peso:</strong> <%= pokemon.peso %> Kg</div>
+          <div><strong>Categoria:</strong> <%= pokemon.categoria %></div>
+          <div><strong>Habilidades:</strong> <%= pokemon.habilidade %></div>
+        </ul>
+      </section>
+
+      <button onclick="history.back()"> Voltar >></button>
+
+      <script src="/js/script.js"></script>
+  </body>
+</html>
+
+<button onclick="history.back()"> Voltar >></button>
+

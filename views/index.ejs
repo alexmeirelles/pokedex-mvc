@@ -13,7 +13,11 @@
 <body>
     
     <header>
-        <h1>Blue Pokedex 3.0</h1>
+        
+        <center>
+            <img id="logo" src="https://pokedex.sleduardo.dev/img/logo.svg"> 
+        </center>   
+        
     </header>
     
     <% if(message != "") {  %>
@@ -40,17 +44,32 @@
             <h2>CADASTRO NOVO POKEMON</h2>
             <form action="/add" method="POST">
                 
+                <label for="numero">Numero: </label>
+                <input type="text" id="numero" name="numero">
+
                 <label for="nome">Nome: </label>
                 <input type="text" id="nome" name="nome">
-
-                <label for="descricao">Descrição: </label>
-                <input type="text" id="descricao" name="descricao">
 
                 <label for="tipo">Tipo: </label>
                 <input type="text" id="tipo" name="tipo">
 
                 <label for="imagem">Link da Imagem: </label>
                 <input type="text" id="imagem" name="imagem">
+
+                <label for="descricao">Descrição: </label>
+                <input type="text" id="descricao" name="descricao">
+
+                <label for="altura">Altura: </label>
+                <input type="text" id="altura" name="altura">
+
+                <label for="peso">Peso: </label>
+                <input type="text" id="peso" name="peso">
+
+                <label for="categoria">Categoria: </label>
+                <input type="text" id="categoria" name="categoria">
+
+                <label for="habilidade">Habilidade: </label>
+                <input type="text" id="habilidade" name="habilidade">
 
                 <center>
                 <button id="btnCadastrar" type="submit">Cadastrar</button>    
@@ -61,9 +80,14 @@
         </section>
     </main>
     
-    <footer>
-
+    <footer id='footer'>
+        <center>
+           <small>
+            ©2021 Pokémon. TM, ®Nintendo.
+        </small> 
+        </center>
     </footer>
+    
     <script src="/public/script.js"></script>
 </body>
 </html>

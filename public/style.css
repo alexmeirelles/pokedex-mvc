@@ -15,7 +15,13 @@ header h1 {
     color: whitesmoke;
     font-size: 3rem;
     text-align: center;
+    visibility: hidden;
     
+}
+
+#logo {
+  display: flex;
+  width: 30%;
 }
 
 main {
@@ -34,6 +40,7 @@ section#cards div.card{
     box-shadow: 10px 5px 5px -6px #777;
     padding: 1rem;
     margin-top: 2rem;
+    cursor: pointer;
     
 }
 
@@ -67,6 +74,7 @@ section#cadastro h2 {
 
 section#cadastro form{
     width: 70%;
+    height: 30%;
 }
 
 section#cadastro form input{
