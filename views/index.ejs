@@ -29,12 +29,14 @@
     <main>
         <section id="cards">
 
-        <% pokedex.forEach((pokemon) => { %>
+        <% pokedex.forEach((pokemon,id) => { %>
         <div class="card">
+            <a href="/detalhes/<%=id%>"></a>
             <img src="<%= pokemon.imagem %>" alt>
             <h2><%= pokemon.nome %></h2>
             <p class="descricao"><%= pokemon.descricao %></p>
             <p><%= pokemon.tipo %></p>
+            </a>
         </div>
         <% }) %>
 

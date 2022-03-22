@@ -50,9 +50,6 @@ const pokedex = [
 //Rotas
 app.get("/", (req, res) => {
    res.render("index", {pokedex, message});
-    setTimeout(() => {
-        message = "";
-      }, 3000);
 });
 
 app.post("/add",(req, res) => {
@@ -60,6 +57,9 @@ app.post("/add",(req, res) => {
     pokemon.id=pokedex.length + 1;
     pokedex.push(pokemon);
     message = `Parabéns! Pokemon cadastrado com sucesso!`;
+    setTimeout(() => {
+        message = ""
+    }, 5000);
     res.redirect("/");
 })
 
