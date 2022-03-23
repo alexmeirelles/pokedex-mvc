@@ -24,6 +24,19 @@ header h1 {
   width: 30%;
 }
 
+header nav {
+  font-size: 3rem;
+  text-align: center;
+  justify-content: flex;
+  margin-top: 3rem;
+}
+
+header nav a:link {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 main {
     margin: 0rem 10rem 0rem 10rem;
 }

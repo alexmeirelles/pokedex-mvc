@@ -22,28 +22,6 @@
             <a href="/cadastro/">CADASTRO</a> 
             </nav>
     </header>
-    
-    <% if(message != "") {  %>
-        <section id="message">
-            <p><%= message %></p> <span id="close">&times;</span>
-        </section>
-    <% }  %>
-
-    <main>
-        <section id="cards">
-
-        <% pokedex.forEach((pokemon, id) => { %>
-        <div class="card">
-            <a href="/detalhes/<%=pokemon.id%>"></a>
-            <img src="<%= pokemon.imagem %>" alt>
-            <h2><%= pokemon.nome %></h2>
-            <p class="descricao"><%= pokemon.descricao %></p>
-            <p><%= pokemon.tipo %></p>
-            </a>
-        </div>
-        <% }) %>
-
-        </section>
 
         <section id="cadastro">
             <h2>CADASTRO NOVO POKEMON</h2>
