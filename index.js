@@ -65,7 +65,7 @@ app.post("/add",(req, res) => {
 
 app.get("/detalhes/:id", (req, res) => {
     const id = req.params.id
-    const pokemon = pokedex[id]
+    const pokemon = pokedex[id-1]
     res.render("detalhes.ejs", { pokemon })
   });
 

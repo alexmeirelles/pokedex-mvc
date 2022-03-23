@@ -18,7 +18,7 @@
             <img id="logo" src="https://pokedex.sleduardo.dev/img/logo.svg"> 
         </center>   
         <nav>
-            <a href="/index/">INICIO</a>
+            <a href="/">INICIO</a>
             <a href="/cadastro/">CADASTRO</a> 
             </nav>
     </header>
@@ -34,7 +34,7 @@
 
         <% pokedex.forEach((pokemon, id) => { %>
         <div class="card">
-            <a href="/detalhes/<%=pokemon.id%>"></a>
+            <a href="/detalhes/<%=pokemon.id%>">
             <img src="<%= pokemon.imagem %>" alt>
             <h2><%= pokemon.nome %></h2>
             <p class="descricao"><%= pokemon.descricao %></p>
