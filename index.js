@@ -66,7 +66,11 @@ app.post("/add",(req, res) => {
 app.get("/detalhes/:id", (req, res) => {
     const id = req.params.id
     const pokemon = pokedex[id-1]
-    res.render("detalhes.ejs", { pokemon })
+    res.render("detalhes.ejs", { pokemon:pokemon })
   });
+
+  app.get("/cadastro", (req, res) => {
+    res.render("cadastro.ejs")
+  }); 
 
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
