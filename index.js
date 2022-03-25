@@ -54,7 +54,7 @@ app.get("/", (req, res) => {
 
 app.post("/add",(req, res) => {
     const pokemon = req.body;
-    pokemon.id=pokedex.length + 1;
+    pokemon.id = pokedex.length + 1;
     pokedex.push(pokemon);
     message = `Parabéns! Pokemon cadastrado com sucesso!`;
     setTimeout(() => {
