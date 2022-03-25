@@ -10,7 +10,7 @@
 
     <title>Blue Pokedex</title>
 </head>
-<body>
+<>
     
     <header>
         
@@ -22,6 +22,8 @@
             <a href="/cadastro/">CADASTRO</a> 
             </nav>
     </header>
+    
+    <section id="cadastrocontainer">
 
       <section>
         <h1 id="detalhes2">DETALHES DO POKEMON</h1>
@@ -39,10 +41,11 @@
           <div><strong>Categoria:</strong> <%= pokemon.categoria %></div>
           <div><strong>Habilidades:</strong> <%= pokemon.habilidade %></div>
         </ul>
-      </section>
+      
 
-      <button onclick="history.back()"> Voltar >></button>
-
+      <button id="btndetalhes" onclick="history.back()"> Voltar </button>
+    </section>
+</section>
       <script src="/js/script.js"></script>
   </body>
 </html>

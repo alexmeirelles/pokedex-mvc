@@ -137,12 +137,23 @@ span#close:hover{
   transform: scale(1.5);
 }
 
+footer {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 
 
+section#cadastrocontainer {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+}
 
-
-
-
+button#btndetalhes {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
 
 
 
