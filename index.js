@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.urlencoded());
 
 let message = "";
 
@@ -49,6 +50,9 @@ const pokedex = [
 
 //Rotas
 app.get("/", (req, res) => {
+    setTimeout(() => {
+		message = '';
+	}, 5000);
    res.render("index", {pokedex, message});
 });
 
