@@ -27,14 +27,15 @@ header h1 {
 header nav {
   font-size: 3rem;
   text-align: center;
-  justify-content: flex;
+  justify-content: stretch;  
   margin-top: 3rem;
+
 }
 
 header nav a:link {
   color: whitesmoke;
   background-color: transparent;
-  text-decoration: underline;
+  
 }
 
 main {
@@ -55,33 +56,36 @@ section#cards div.card{
     margin-top: 2rem;
     cursor: pointer;
     
+    
 }
 
 section#cards div.card img{
     width: 100%;
 }
 
-section#cards div.card h2{
+section#cards div.card h2 {
     margin-bottom: 1rem;
     color: midnightblue;
+    text-decoration: underline; 
+    text-decoration-color: white;
 }
 
-section#cards div.card p.descricao{
+section#cards div.card p.descricao {
     margin-bottom: 1rem;
+    text-decoration: underline; 
+    text-decoration-color: white;
 }
 
 section#cadastro {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
     padding: 5rem;
 }
 
 section#cadastro h2 {
     width: 100%;
     text-align: center;
-
     padding-bottom: 2rem;
 }
 
@@ -251,5 +255,52 @@ button, button::after {
   }
 
 
-
-
+  
+  .button-58 {
+    align-items: center;
+    background-color: #06f;
+    border: 2px solid #06f;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-58:focus {
+    color: #171e29;
+  }
+  
+  .button-58:hover {
+    background-color: #3385ff;
+    border-color: #3385ff;
+    fill: #06f;
+  }
+  
+  .button-58:active {
+    background-color: #3385ff;
+    border-color: #3385ff;
+    fill: #06f;
+  }
+  
+  @media (min-width: 768px) {
+    .button-58 {
+      min-width: 170px;
+    }
+  }

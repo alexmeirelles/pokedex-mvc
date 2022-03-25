@@ -36,9 +36,9 @@
         <div class="card">
             <a href="/detalhes/<%=pokemon.id%>">
             <img src="<%= pokemon.imagem %>" alt>
-            <h2><%= pokemon.nome %></h2>
+            <h2 class="descricao"><%= pokemon.nome %></h2>
             <p class="descricao"><%= pokemon.descricao %></p>
-            <p><%= pokemon.tipo %></p>
+            <p class="descricao"><%= pokemon.tipo %></p>
             </a>
         </div>
         <% }) %>
