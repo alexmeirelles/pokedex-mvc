@@ -70,6 +70,7 @@ section#cards div.card h2 {
 
 section#cards div.card p.descricao {
     margin-bottom: 1rem;
+    color: #171e29;
     text-decoration: underline; 
     text-decoration-color: white;
 }
